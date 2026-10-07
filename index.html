@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>四川草海高源生态环境有限公司 - 生态环境治理与建设工程</title>
+<meta name="description" content="四川草海高源生态环境有限公司：建筑工程施工总承包二级，专注生态治理、环境工程、市政公路、水利水电及文物保护工程施工。联系电话 18725917777">
+<style>
+  :root{
+    --green:#1e6b3a; --green-dark:#14522b; --green-light:#e8f3ec;
+    --gold:#c9a84c; --text:#333; --muted:#777; --bg:#f7faf8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"Microsoft YaHei","PingFang SC",sans-serif;color:var(--text);background:#fff;line-height:1.7;}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+
+  /* 顶部导航 */
+  header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);box-shadow:0 1px 6px rgba(0,0,0,.08);}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .logo{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--green-dark);}
+  .logo-mark{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--green),#2e8b57);
+    color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;flex-shrink:0;}
+  .logo small{display:block;font-size:11px;font-weight:400;color:var(--muted);letter-spacing:.5px;}
+  nav ul{display:flex;gap:26px;list-style:none;font-size:15px;}
+  nav a:hover{color:var(--green);}
+  .nav-phone{color:var(--green);font-weight:700;font-size:15px;white-space:nowrap;}
+
+  /* 首屏 */
+  .hero{position:relative;min-height:520px;display:flex;align-items:center;
+    background:linear-gradient(rgba(10,40,20,.55),rgba(10,40,20,.55)),url("assets/hero.jpg") center/cover no-repeat;}
+  .hero-inner{color:#fff;padding:70px 0;}
+  .hero h1{font-size:40px;letter-spacing:2px;margin-bottom:14px;text-shadow:0 2px 8px rgba(0,0,0,.4);}
+  .hero p{font-size:18px;opacity:.94;margin-bottom:10px;text-shadow:0 1px 4px rgba(0,0,0,.4);}
+  .hero .tagline{font-size:15px;letter-spacing:3px;color:#d9ead9;}
+  .hero-btns{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{display:inline-block;padding:12px 30px;border-radius:4px;font-size:16px;transition:.2s;}
+  .btn-primary{background:var(--gold);color:#fff;font-weight:700;}
+  .btn-primary:hover{background:#b3923c;}
+  .btn-ghost{border:1px solid rgba(255,255,255,.75);color:#fff;}
+  .btn-ghost:hover{background:rgba(255,255,255,.15);}
+
+  /* 区块 */
+  section{padding:70px 0;}
+  section:nth-of-type(even){background:var(--bg);}
+  .sec-title{text-align:center;margin-bottom:44px;}
+  .sec-title h2{font-size:30px;color:var(--green-dark);letter-spacing:2px;}
+  .sec-title .en{font-size:13px;color:var(--muted);letter-spacing:4px;text-transform:uppercase;margin-top:6px;}
+  .sec-title::after{content:"";display:block;width:56px;height:3px;background:var(--gold);margin:16px auto 0;border-radius:2px;}
+
+  /* 关于 */
+  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;}
+  .about-text p{margin-bottom:14px;text-align:justify;}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .stat{background:#fff;border:1px solid #e3ece6;border-radius:8px;padding:22px 10px;text-align:center;box-shadow:0 2px 8px rgba(30,107,58,.06);}
+  .stat b{display:block;font-size:30px;color:var(--green);}
+  .stat span{font-size:13px;color:var(--muted);}
+
+  /* 业务 */
+  .biz-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .biz{background:#fff;border-radius:8px;padding:30px 24px;border-top:4px solid var(--green);box-shadow:0 3px 12px rgba(0,0,0,.06);transition:.25s;}
+  .biz:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(30,107,58,.14);}
+  .biz .ico{font-size:34px;margin-bottom:12px;}
+  .biz h3{font-size:19px;color:var(--green-dark);margin-bottom:10px;}
+  .biz p{font-size:14px;color:var(--muted);}
+
+  /* 资质 */
+  .cert-box{background:#fff;border-radius:8px;padding:36px;box-shadow:0 3px 14px rgba(0,0,0,.06);}
+  .cert-box h3{color:var(--green-dark);margin-bottom:16px;font-size:20px;}
+  .cert-tags{display:flex;flex-wrap:wrap;gap:12px;}
+  .tag{background:var(--green-light);color:var(--green-dark);padding:8px 16px;border-radius:20px;font-size:14px;border:1px solid #cfe3d6;}
+  .cert-note{margin-top:18px;font-size:13px;color:var(--muted);}
+  .cert-main{margin-top:20px;padding:16px 20px;background:linear-gradient(90deg,var(--green),#2e8b57);color:#fff;border-radius:6px;font-size:15px;}
+
+  /* 团队 */
+  .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .team{background:#fff;border-radius:8px;text-align:center;padding:28px 12px;box-shadow:0 3px 10px rgba(0,0,0,.05);}
+  .team b{display:block;font-size:28px;color:var(--green);}
+  .team span{font-size:14px;color:var(--muted);}
+
+  /* 联系 */
+  .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .contact-card{background:#fff;border-radius:8px;padding:30px;text-align:center;box-shadow:0 3px 12px rgba(0,0,0,.06);}
+  .contact-card .ico{font-size:32px;margin-bottom:10px;}
+  .contact-card h3{font-size:16px;color:var(--muted);margin-bottom:8px;font-weight:400;}
+  .contact-card p{font-size:17px;font-weight:700;color:var(--green-dark);word-break:break-all;}
+  .contact-banner{margin-top:26px;text-align:center;background:var(--green-dark);color:#fff;border-radius:8px;padding:26px;font-size:18px;}
+  .contact-banner b{color:var(--gold);font-size:24px;letter-spacing:1px;}
+
+  /* 页脚 */
+  footer{background:#12301c;color:#a8c3b0;padding:34px 0;font-size:13px;text-align:center;}
+  footer .name{color:#fff;font-size:15px;margin-bottom:8px;letter-spacing:1px;}
+
+  /* 响应式 */
+  @media(max-width:860px){
+    nav ul{display:none;}
+    .hero h1{font-size:28px;}
+    .about-grid,.biz-grid,.team-grid,.contact-grid{grid-template-columns:1fr;}
+    .biz-grid{grid-template-columns:1fr 1fr;}
+    section{padding:50px 0;}
+  }
+  @media(max-width:520px){.biz-grid{grid-template-columns:1fr;}}
+  @media(max-width:600px){
+    .hero h1{font-size:22px;letter-spacing:1px;}
+    .hero{min-height:430px;}
+    .hero p{font-size:15px;}
+    .logo small{display:none;}
+    .logo{font-size:14px;}
+    .nav-phone{font-size:18px;font-weight:700;}
+    .nav-phone span{display:none;}
+    .sec-title h2{font-size:24px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#top">
+      <div class="logo-mark">草</div>
+      <div>四川草海高源生态环境有限公司<small>SICHUAN CAOHAI GAOYUAN ECO-ENVIRONMENT</small></div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#biz">业务范围</a></li>
+        <li><a href="#cert">资质证书</a></li>
+        <li><a href="#team">人才队伍</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </nav>
+    <a class="nav-phone" href="tel:18725917777">☎ <span>187 2591 7777</span></a>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="container hero-inner">
+    <p class="tagline">守 护 绿 水 青 山 · 筑 造 品 质 工 程</p>
+    <h1>四川草海高源生态环境有限公司</h1>
+    <p>生态环境治理 · 建设工程施工 · 专业技术服务</p>
+    <div class="hero-btns">
+      <a class="btn btn-primary" href="#contact">联系我们</a>
+      <a class="btn btn-ghost" href="#biz">了解业务</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container">
+    <div class="sec-title"><h2>关于我们</h2><div class="en">About Us</div></div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>四川草海高源生态环境有限公司成立于 2018 年，是一家集<b>生态环境治理</b>与<b>建设工程施工</b>于一体的综合性企业，具有建筑工程施工总承包二级等多项资质。</p>
+        <p>公司主营水污染治理、土壤污染治理与修复、环保工程施工、文物保护工程施工，同时承接建筑工程、市政公用工程、公路工程、水利水电工程及钢结构工程专业施工，并提供机械设备租赁、信息技术咨询、工程管理服务等配套业务。</p>
+        <p>公司建立了完善的管理体系，设有工程管理部、技术质量部、安全环保部、成本合约部等部门，以及项目管理中心、工程项目部、生态治理项目部、环境工程项目部等业务单元，为各类项目提供全流程专业保障。</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>2018</b><span>公司成立</span></div>
+        <div class="stat"><b>2级</b><span>建筑工程施工总承包</span></div>
+        <div class="stat"><b>8+</b><span>专业资质类别</span></div>
+        <div class="stat"><b>30+</b><span>专业技术人员</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="biz">
+  <div class="container">
+    <div class="sec-title"><h2>业务范围</h2><div class="en">Our Services</div></div>
+    <div class="biz-grid">
+      <div class="biz"><div class="ico">🏗️</div><h3>建筑工程施工</h3><p>建筑工程施工总承包贰级，承接房屋建筑、综合楼维修改造、校园校舍等各类工程施工项目。</p></div>
+      <div class="biz"><div class="ico">🌿</div><h3>生态与环境治理</h3><p>水污染治理、土壤污染治理与修复服务、土壤环境污染防治、环保工程专业承包施工。</p></div>
+      <div class="biz"><div class="ico">🛣️</div><h3>市政与公路工程</h3><p>市政公用工程、公路工程、公路路面与路基工程专业承包施工，服务城乡基础设施建设。</p></div>
+      <div class="biz"><div class="ico">💧</div><h3>水利水电工程</h3><p>水利水电工程施工总承包，承担水利设施、河道治理等相关工程建设。</p></div>
+      <div class="biz"><div class="ico">🏛️</div><h3>文物保护工程</h3><p>文物保护工程施工资质，专注古建筑修缮、文物保护与古建保护相关工程。</p></div>
+      <div class="biz"><div class="ico">⚙️</div><h3>专业服务与配套</h3><p>钢结构工程、机械设备租赁、建筑材料销售、工程管理服务、信息技术咨询等。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="cert">
+  <div class="container">
+    <div class="sec-title"><h2>资质证书</h2><div class="en">Qualifications</div></div>
+    <div class="cert-box">
+      <div class="cert-main">🎓 建筑业企业资质证书（四川省住房和城乡建设厅颁发，证书编号 D251D15670，有效期至 2030 年 9 月）</div>
+      <h3>资质类别及等级</h3>
+      <div class="cert-tags">
+        <span class="tag">建筑工程施工总承包 贰级</span>
+        <span class="tag">市政公用工程施工总承包 叁级</span>
+        <span class="tag">公路工程施工总承包 叁级</span>
+        <span class="tag">水利水电工程施工总承包 叁级</span>
+        <span class="tag">钢结构工程专业承包 叁级</span>
+        <span class="tag">环保工程专业承包 叁级</span>
+        <span class="tag">公路路面工程专业承包 叁级</span>
+        <span class="tag">公路路基工程专业承包 叁级</span>
+      </div>
+      <p class="cert-note">* 经营范围另含：水污染治理、土壤污染治理与修复、文物保护工程施工、建筑劳务分包、建设工程监理、电气安装服务等（以登记机关核准为准）。资质证书原件可来电索取查阅。</p>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="container">
+    <div class="sec-title"><h2>人才队伍</h2><div class="en">Our Team</div></div>
+    <div class="team-grid">
+      <div class="team"><b>20</b><span>项目经理</span></div>
+      <div class="team"><b>5</b><span>高级工程师</span></div>
+      <div class="team"><b>4</b><span>中级工程师</span></div>
+      <div class="team"><b>5+</b><span>技工及初级工程师</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="sec-title"><h2>联系我们</h2><div class="en">Contact Us</div></div>
+    <div class="contact-grid">
+      <div class="contact-card"><div class="ico">📞</div><h3>联系电话</h3><p><a href="tel:18725917777">187 2591 7777</a></p></div>
+      <div class="contact-card"><div class="ico">🏢</div><h3>公司地址</h3><p>中国（四川）自由贸易试验区成都高新区吉泰路666号1栋30层2号</p></div>
+      <div class="contact-card"><div class="ico">📋</div><h3>统一社会信用代码</h3><p style="font-size:15px;">91510100MA6790H59P</p></div>
+    </div>
+    <div class="contact-banner">业务洽谈与合作咨询，欢迎来电：<b>187 2591 7777</b></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="name">四川草海高源生态环境有限公司</div>
+    <div>守绿水青山 · 筑品质工程</div>
+    <div style="margin-top:10px;">© 2026 Sichuan Caohai Gaoyuan Eco-Environment Co., Ltd. All Rights Reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
